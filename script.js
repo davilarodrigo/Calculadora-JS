@@ -96,8 +96,8 @@ function performOperation(operation) {
 
     console.info("operationResult: "+operationResult)
     if (operation == "=") {
-        currentOperation=""
-        displayValue(operationResult);
+        currentOperation=""        
+        displayValue(Math.round(operationResult * 100) / 100);
         
     }else{        
         displayValue(operation)
